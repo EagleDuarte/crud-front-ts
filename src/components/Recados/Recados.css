@@ -1,0 +1,10 @@
+/* .container{
+  background: linear-gradient(to right, #ffa751, #ffe259);
+} */
+.bg{
+  background-image: url(../../assets/img/background-moving.gif);
+  background-position: center center;
+  background-repeat:no-repeat; 
+  background-size: 180%;
+  background-position: -150px;
+}

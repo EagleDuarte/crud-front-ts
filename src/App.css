@@ -1,0 +1,16 @@
+.App {
+  text-align: center;  
+  
+background: linear-gradient(to right, #1e3ba4e2, #751f51eb);
+}
+html{
+background: linear-gradient(to right, #1e3ba4e2, #751f51eb);
+}
+nav a {
+  color: #000;
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a:hover {
+  text-decoration: none;
+}
