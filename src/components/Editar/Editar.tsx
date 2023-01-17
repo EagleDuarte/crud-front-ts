@@ -6,11 +6,7 @@ import { AuthContext } from "../../contexts/Auth/AuthContext";
 export const Editar: any = () => {
   const auth = useContext(AuthContext);
   const navigate = useNavigate();
-
-  //------FUNÇÕES NÃO UTILIZADAS NESSE PROJETO-----
-  // const userName = localStorage.getItem("authName");
   const userToken = localStorage.getItem("authToken");
-
   const params = useParams();
   const [description, setDescription] = useState("");
   const [detail, setDetail] = useState("");

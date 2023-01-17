@@ -14,21 +14,10 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     return user.data._name;
   }
 
-  //------FUNÇÕES NÃO UTILIZADAS NESSE PROJETO-----
-  // const userToken = localStorage.getItem("authToken");
-
-  // useEffect(() => {
-  //   //api.validateToken(userToken);
-  //   api.loadTask();
-  //   console.log("authprovider");
-  // }, []);
-
   const signin = async (name: string, pass: string) => {
     const data = await api.signin(name, pass);
     if (data.ok) {
       setUser(data);
-      // setUserName(data.data.userName);
-      // setUserId(data.data.userId);
       setToken(data.token);
       setData(data);
       return true;
@@ -51,7 +40,6 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     setUser(null);
     setToken("");
     setData("");
-    //await api.logout();
   };
 
   const loadTask = async (token: string) => {
@@ -97,7 +85,6 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     return data;
   };
 
-  //------LOCALSTORAGE NÃO UTILIZADO NESSE PROJETO-----
   const setToken = (token: string) => {
     localStorage.setItem("authToken", token);
   };

@@ -154,7 +154,6 @@ export const Recados: any = () => {
             </div>
           </header>
           <main>
-            {/* <!--LISTA RECADOS--> */}
             <div className="m-2 table-responsive ">
               <table className="table table-hover align-middle" id="note-table">
                 <thead className="">
