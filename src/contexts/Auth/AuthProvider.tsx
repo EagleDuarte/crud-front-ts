@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { useApi } from "../../hooks/useApi";
+import { settingApi } from "../../hooks/settingApi";
 import { Login } from "../../types/User";
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }: { children: JSX.Element }) => {
   const [user, setUser] = useState<Login | null>(null);
   const [name, setName] = useState("");
-  const api = useApi();
+  const api = settingApi();
 
   function loadName() {
     const user = JSON.parse(localStorage.getItem("authData") || "");

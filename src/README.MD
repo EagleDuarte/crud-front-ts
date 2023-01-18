@@ -1,4 +1,5 @@
-# Usuários previamente cadastratos no projeto:
+# Usuários previamente cadastratos no 
 
-teste1@teste.com
-1234@
+ user1@teste.com, 1111
+ user2@teste.com, 2222
+ user3@teste.com, 3333

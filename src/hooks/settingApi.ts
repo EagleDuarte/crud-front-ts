@@ -4,7 +4,7 @@ export const api = axios.create({
   baseURL: "http://192.168.1.67:3333",
 });
 
-export const useApi = () => ({
+export const settingApi = () => ({
   signin: async (name: string, pass: string) => {
     const response = await api.post("/user/login", { name, pass });
     return response.data;
